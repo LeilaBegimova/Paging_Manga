@@ -1,6 +1,5 @@
 package com.example.android4_1.presentation.ui.fragments
 
-import com.example.android4_1.presentation.ui.viewmodels.MangaViewModel
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
@@ -13,7 +12,7 @@ import androidx.paging.LoadState
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.android4_1.R
 import com.example.android4_1.databinding.FragmentMangaBinding
-import com.example.android4_1.presentation.ui.MangaAdapter
+import com.example.android4_1.presentation.ui.adapter.MangaAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -55,4 +54,3 @@ class MangaFragment : Fragment(R.layout.fragment_manga) {
         }
     }
 }
-

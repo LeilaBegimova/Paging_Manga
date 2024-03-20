@@ -13,6 +13,7 @@ import javax.inject.Inject
 class MangaRepository @Inject constructor(
     private val mangaApiService: MangaApi
 ) {
+
     fun fetchManga(): LiveData<PagingData<Data>> {
         return Pager(
             config = PagingConfig(
