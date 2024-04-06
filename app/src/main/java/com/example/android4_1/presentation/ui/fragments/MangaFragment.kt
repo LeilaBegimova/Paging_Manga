@@ -48,7 +48,6 @@ class MangaFragment : Fragment(R.layout.fragment_manga) {
                 mangaAdapter.loadStateFlow.collect {
                     progressBar.isVisible = it.source.refresh is LoadState.Loading
                     appendProgress.isVisible = it.source.append is LoadState.Loading
-                    prependProgress.isVisible = it.source.prepend is LoadState.Loading
                 }
             }
         }

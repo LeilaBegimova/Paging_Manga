@@ -7,7 +7,7 @@ import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.example.android4_1.data.models.Data
 import com.example.android4_1.data.remote.apiservice.MangaApi
-import com.example.android4_1.data.source.MangaSource
+import com.example.android4_1.data.paging.source.MangaSource
 import javax.inject.Inject
 
 class MangaRepository @Inject constructor(

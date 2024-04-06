@@ -9,6 +9,7 @@
     tools:ignore="ExtraText">
 
     <FrameLayout
+        android:id="@+id/fl_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -19,7 +20,7 @@
             android:scrollbars="vertical"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="3"
-            tools:listitem="@layout/item" />
+            tools:listitem="@layout/manga_item" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -29,17 +30,9 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_progress"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-            <com.google.android.material.progressindicator.LinearProgressIndicator
-                android:id="@+id/prepend_progress"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:indeterminate="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
 
             <com.google.android.material.progressindicator.LinearProgressIndicator
                 android:id="@+id/append_progress"
